@@ -566,18 +566,30 @@ export default function ConsultationsPage() {
   return (
     <main className="min-h-screen bg-slate-950 px-4 py-8 text-white sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <header className="mb-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-sky-400">
-            CareerPilot AI
-          </p>
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Book a Career Consultation
-          </h1>
-          <p className="mt-3 max-w-2xl text-slate-400">
-            Meet with a career expert to discuss your resume, interview
-            preparation, career transition, and professional goals.
-          </p>
-        </header>
+       <header className="mb-8">
+  <div className="mb-5">
+    <a
+      href="/dashboard"
+      className="inline-flex items-center gap-2 rounded-lg border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 transition hover:border-sky-400 hover:bg-slate-800"
+    >
+      <span aria-hidden="true">←</span>
+      Back to Dashboard
+    </a>
+  </div>
+
+  <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-sky-400">
+    CareerPilot AI
+  </p>
+
+  <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+    Book a Career Consultation
+  </h1>
+
+  <p className="mt-3 max-w-2xl text-slate-400">
+    Meet with a career expert to discuss your resume, interview
+    preparation, career transition, and professional goals.
+  </p>
+</header>
 
         {pageError && (
           <div
